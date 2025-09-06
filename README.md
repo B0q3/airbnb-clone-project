@@ -55,3 +55,78 @@ A containerization tool used to package the application and its dependencies int
 
 ### 6. GitHub Actions
 A CI/CD tool integrated with GitHub that automates testing, building, and deployment pipelines to streamline development workflows and maintain code quality.
+
+## Database Design
+
+### 🧑 Users
+Fields:
+- `id` (UUID)
+- `name`
+- `email`
+- `password`
+- `role` (guest or host)
+
+Description:
+Each user can act as a guest or a host. Hosts can create property listings, while guests can book properties.
+
+---
+
+### 🏠 Properties
+Fields:
+- `id` (UUID)
+- `title`
+- `description`
+- `location`
+- `price_per_night`
+- `host_id` (Foreign Key → Users)
+
+Description:
+A property belongs to a host (user). A host can have multiple properties listed.
+
+---
+
+### 📅 Bookings
+Fields:
+- `id` (UUID)
+- `user_id` (Foreign Key → Users)
+- `property_id` (Foreign Key → Properties)
+- `check_in_date`
+- `check_out_date`
+
+Description:
+Each booking is made by a guest for a specific property and includes check-in and check-out dates.
+
+---
+
+### ⭐ Reviews
+Fields:
+- `id` (UUID)
+- `user_id` (Foreign Key → Users)
+- `property_id` (Foreign Key → Properties)
+- `rating` (1–5)
+- `comment`
+
+Description:
+Guests can leave a review for a property they booked. Each review is linked to both the user and the property.
+
+---
+
+### 💳 Payments
+Fields:
+- `id` (UUID)
+- `booking_id` (Foreign Key → Bookings)
+- `amount`
+- `status` (e.g., pending, completed)
+- `payment_date`
+
+Description:
+Each payment is associated with a booking and includes details like amount and status.
+
+---
+
+### 🔗 Entity Relationships Summary
+- A **User** can have many **Properties** (if host)
+- A **Property** can have many **Bookings**
+- A **Booking** is linked to one **User** and one **Property**
+- A **Booking** has one **Payment**
+- A **User** can leave multiple **Reviews** for different **Properties**
