@@ -130,3 +130,23 @@ Each payment is associated with a booking and includes details like amount and s
 - A **Booking** is linked to one **User** and one **Property**
 - A **Booking** has one **Payment**
 - A **User** can leave multiple **Reviews** for different **Properties**
+
+## Feature Breakdown
+
+### 1. User Management
+Allows users to register, log in, and manage their profiles. This feature handles authentication and authorization, ensuring secure access to user-specific data.
+
+### 2. Property Management
+Hosts can create, update, and delete property listings with details like location, pricing, and amenities. This enables the core functionality of displaying available properties for booking.
+
+### 3. Booking System
+Enables guests to book properties by selecting dates and confirming availability. The system manages booking statuses, cancellations, and date conflicts to maintain accurate schedules.
+
+### 4. Review and Rating System
+Guests can leave reviews and ratings on properties they have stayed at. This feedback helps future users make informed decisions and promotes trust within the platform.
+
+### 5. Payment Processing
+Handles secure payment transactions for bookings, including tracking payment statuses and histories. This ensures smooth financial operations between guests and hosts.
+
+### 6. Notifications
+Sends email or in-app notifications for booking confirmations, payment updates, and review requests. This keeps users informed and engaged throughout their interaction with the platform.
