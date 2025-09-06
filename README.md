@@ -150,3 +150,22 @@ Handles secure payment transactions for bookings, including tracking payment sta
 
 ### 6. Notifications
 Sends email or in-app notifications for booking confirmations, payment updates, and review requests. This keeps users informed and engaged throughout their interaction with the platform.
+
+
+## API Security
+
+### Key Security Measures
+
+- **Authentication:** Ensures that only registered users can access protected endpoints by verifying their identity, typically through JWT tokens or session management. This protects user accounts and sensitive data.
+  
+- **Authorization:** Controls what authenticated users are allowed to do, such as restricting property management features to hosts only. It prevents unauthorized access to critical operations.
+  
+- **Rate Limiting:** Limits the number of API requests a user or IP can make in a given time frame to prevent abuse, such as brute-force attacks or denial of service.
+  
+- **Data Validation and Sanitization:** Ensures all incoming data is validated and sanitized to prevent injection attacks like SQL injection or cross-site scripting (XSS).
+
+- **Secure Payment Handling:** Uses encryption and secure protocols (like HTTPS) to protect payment information and transactions from interception or fraud.
+
+### Why Security Matters
+
+Protecting user data is essential to maintain privacy and trust within the platform. Securing payments prevents financial loss and fraud. Proper authentication and authorization safeguard the system against unauthorized actions, while rate limiting and validation protect the API from malicious attacks, ensuring the application remains stable and reliable.
