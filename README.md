@@ -169,3 +169,20 @@ Sends email or in-app notifications for booking confirmations, payment updates, 
 ### Why Security Matters
 
 Protecting user data is essential to maintain privacy and trust within the platform. Securing payments prevents financial loss and fraud. Proper authentication and authorization safeguard the system against unauthorized actions, while rate limiting and validation protect the API from malicious attacks, ensuring the application remains stable and reliable.
+
+
+## CI/CD Pipeline
+
+### What is CI/CD?
+
+Continuous Integration (CI) and Continuous Deployment (CD) are development practices that automate the building, testing, and deployment of code changes. CI ensures that code changes are regularly merged and tested to detect issues early. CD automates the release of validated changes to production, enabling faster and more reliable deployments.
+
+### Importance for the Project
+
+Implementing a CI/CD pipeline for this Airbnb Clone project helps maintain code quality, reduce manual errors, and accelerate the development process. It ensures that new features and bug fixes are automatically tested and deployed, providing quick feedback to developers and stable releases to users.
+
+### Tools Used
+
+- **GitHub Actions:** Automates workflows such as testing and deployment triggered by code changes in the GitHub repository.
+- **Docker:** Packages the application and its dependencies into containers, enabling consistent environments from development to production.
+- **Other tools** (optional): Could include testing frameworks and cloud services for deployment.
