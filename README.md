@@ -35,3 +35,23 @@ Handles deployment, environment configuration, and CI/CD pipelines using tools l
 
 ### 5. Project Manager
 Coordinates the development process, tracks progress, and ensures the project stays on schedule. Manages communication among team members and stakeholders.
+
+## Technology Stack
+
+### 1. Django
+A high-level Python web framework used for building the backend logic and APIs of the application. Django helps manage user authentication, request handling, and database interaction securely and efficiently.
+
+### 2. GraphQL
+A flexible API query language used in place of traditional REST APIs. It allows the frontend to request exactly the data it needs, improving performance and reducing over-fetching.
+
+### 3. PostgreSQL
+A powerful open-source relational database system used to store all structured data, including users, listings, bookings, reviews, and payments.
+
+### 4. React
+A JavaScript library for building dynamic and interactive user interfaces. It connects to the backend via GraphQL and renders components based on user actions and data.
+
+### 5. Docker
+A containerization tool used to package the application and its dependencies into portable containers, ensuring consistent environments across development and production.
+
+### 6. GitHub Actions
+A CI/CD tool integrated with GitHub that automates testing, building, and deployment pipelines to streamline development workflows and maintain code quality.
